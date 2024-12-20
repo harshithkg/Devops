@@ -1,1 +1,9 @@
-Today we learnt Git and Git Hub
+ Git and Git Hub
+git init
+git add filename
+git add .
+git push 
+git push origin branch_name
+git merge
+git pull
+git pull origin filename
