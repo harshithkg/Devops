@@ -7,3 +7,5 @@ git push origin branch_name
 git merge
 git pull
 git pull origin filename
+git tag tag_name
+git push --tag
