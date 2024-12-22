@@ -1,2 +1,2 @@
 git merge : integrate the changes from one branch to another.
-git merge branch_name
+git merge <branchname>
