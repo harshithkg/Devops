@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 git merge : integrate the changes from one branch to another.
 git merge <branch_name>
+=======
+Shuba teacher
+>>>>>>> d908866292248550ca221749f6e57b5750a220e8
