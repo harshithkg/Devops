@@ -1,0 +1,2 @@
+git reset : it is used to undo thr changes but history will not be tracked.
+The name itself indiactes reset HEAD to the privious commit.
