@@ -1,0 +1,2 @@
+Git Fetch : It will bring the changes from remote repo and stores it in separate branch in local workspace.
+We can review the changes and merge if its required.
