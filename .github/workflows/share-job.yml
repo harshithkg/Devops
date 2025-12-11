@@ -16,7 +16,6 @@ jobs:
         with:
           name: build-output
           path: build/
-
   test:
     runs-on: ubuntu-latest
     steps:
@@ -30,3 +29,7 @@ jobs:
           echo "Downloaded Files are:"
           pwd
           ls -lrth
+      - name: Read the file contents
+        run: |
+          echo "Contents of file is:"
+          cat /home/runner/work/Devops/Devops/msg.txt
