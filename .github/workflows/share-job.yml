@@ -10,8 +10,6 @@ jobs:
           echo "Hello from build job" > build/msg.txt
           echo "Created a file"
           ls -R .
-          sleep 5
-
       - name: upload build artifact
         uses: actions/upload-artifact@v4
         with:
