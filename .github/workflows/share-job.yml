@@ -18,6 +18,7 @@ jobs:
           name: build-output
           path: build/
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download build artifact
