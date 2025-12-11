@@ -1,0 +1,32 @@
+name: Share Files between Jobs
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a output File
+        run: |
+          mkdir -p build
+          echo "Hello from build job" > build/msg.txt
+          echo "Created a file"
+          ls -R .
+
+      - name: upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: build/
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: build-output
+          path: .
+      - name: List the Files
+        run: |
+          echo "Downloaded Files are:"
+          pwd
+          ls -lrth
